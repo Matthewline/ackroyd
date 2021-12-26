@@ -1,0 +1,143 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    height: 64px;
+    background-color: #E6EBFE;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    box-shadow: 2px 2px 2px  #4a54b1;
+}
+.navbar_logo{
+    margin-top: 18px;
+    margin-left: 20px;
+    font-size: 26px;
+    background-image: linear-gradient(to right,#152B79 25%, #3250bd);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+.navbar_links{
+    display: flex;
+    list-style-type: none;
+    gap: 21px;
+    padding-right: 21.4px;
+    padding-top: 24px;
+    font-family: 'Lato', sans-serif;
+}
+.navbar_links a{
+    text-decoration: none;
+    color: #3250BD;
+}
+.navbar_links a:hover{
+    border-bottom: 4px solid;
+}
+#color{
+    color: #7D94E8;
+}
+.page{
+    padding: 0 26px 0 26px;
+}
+.pictures{
+    display: grid;
+    padding-bottom: 20px; 
+}
+.pictures img{
+    max-width: 100%;
+}
+.title{
+    font-size: 20px;
+}
+.title:after{
+    display: block;
+    padding-bottom: 2px;
+    content: '';
+    position: relative;
+    width: 128px;
+    border-bottom: 2px solid #F39130;
+}
+.paragraph{
+    display: flex;
+    color: #383838;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-bottom: 48px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 24px 0px 24px;
+    text-align: center;
+    height: 200px;
+    background-color: #E6EBFE;
+}
+.newsletter_title{
+    font-family: 'Lato', sans-serif;
+    color: #383838;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+.newsletter_paragraph{
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    color: #383838;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+.footer{
+    text-align: center;
+    padding-top: 34px;
+    height: 248px;
+    background-color: #152B79;
+}
+.footer-list{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 32px;
+    letter-spacing: 10px;
+}
+.footer-list a{
+    color: white;
+}
+.author{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #E6EBFE;
+    padding-bottom: 20px;
+}
+.footer-links a{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    color: #B3C1F4;
+    font-size: 12px;
+}
+.form{
+    max-width: 19rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form__email {
+    flex: 1;
+	padding: 16px 13px 16px 13px;
+	border-radius: 5px 0px 0px 5px;
+    border: 1px solid #CAD3DB;
+	font-size: 12px;
+	color: #0F121F;
+    border: none;
+}
+.form__button {
+    width: 5rem;
+	background: #FEC48A;
+	padding: 18px 39px 18px 13px;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	font-size: 12px;
+	color: #571B0F;
+}
