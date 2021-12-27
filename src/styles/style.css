@@ -5,7 +5,7 @@
 }
 .nav{
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     height: 64px;
     width: 100%;
     background-color: #E6EBFE;
@@ -44,20 +44,23 @@ li:hover{
 #diffrent_color{
     color: #7D94E8;
 }
-.page{
-    padding: 90px 26px 0 26px;
+.main{
+    padding: 23px 26px 0 26px;
 }
-.pictures{
-    padding-bottom: 20px; 
-}
-.pictures img{
-    max-width: 100%;
-    height: 100rem;
+.square_primary {
+    width: 100%;
+    height: 166px;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+    margin-bottom: 97px;
 }
 .title{
     font-size: 20px;
+    padding-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 .title:after{
+    padding-top: 6px;
     display: block;
     padding-bottom: 2px;
     content: '';
@@ -65,12 +68,20 @@ li:hover{
     width: 128px;
     border-bottom: 2px solid #F39130;
 }
+.square_second {
+    width: 100%;
+    height: 166px;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
 .paragraph{
     display: flex;
     color: #383838;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     padding-bottom: 48px;
+    line-height: 24px;
 }
 .newsletter{
     display: flex;
@@ -82,18 +93,22 @@ li:hover{
     background-color: #E6EBFE;
 }
 .newsletter_title{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     color: #383838;
     font-weight: 500;
     font-size: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+    line-height: 20px;
+    height: 20px;
 }
 .newsletter_paragraph{
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Lato', sans-serif;
     color: #383838;
     font-size: 12px;
     padding-bottom: 25px;
+    line-height: 14px;
 }
 .footer{
     text-align: center;
@@ -104,7 +119,7 @@ li:hover{
 .footer-list{
     font-size: 25px;
     color: white;
-    padding-bottom: 32px;
+    padding-bottom: 18px;
     letter-spacing: 10px;
 }
 .footer-list a{
@@ -121,12 +136,14 @@ li:hover{
     font-family: 'Lato', sans-serif;
     color: #B3C1F4;
     font-size: 12px;
+    padding: 0 16px;
 }
 .form{
     max-width: 19rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
 }
 .form__email {
     flex: 1;
@@ -138,12 +155,18 @@ li:hover{
     border: none;
 }
 .form__button {
+    display: flex;
     width: 5rem;
 	background: #FEC48A;
-	padding: 18px 39px 18px 13px;
+	padding: 18px 100px 12px 13px;
 	border: none;
 	border-radius: 0px 5px 5px 0px;
 	font-size: 12px;
 	color: #571B0F;
     cursor: pointer;
+}
+.form__button img{
+    margin-top: -5px;
+    display: flex;
+    padding: 0 7px;
 }
