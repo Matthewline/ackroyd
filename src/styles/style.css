@@ -182,16 +182,48 @@ li:hover{
     .main{
         padding-left: 64px;
         padding-right: 64px;
+        max-width: 100%;
     }
-    .paragraph{
+    .squares{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .squaress{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .square_primary {
+        width: 468px;
+        height: 274px;
+        background-color: #E5E5E5;
+        border-radius: 8px;
+        margin-bottom: 80px;
+    }
+    .square_1{
+        width: 214px;
+        height: 125px;
+        background-color: #E5E5E5;
+        border-radius: 8px;
+    }
+    .square_2{
+        width: 214px;
+        height: 125px;
+        background-color: #E5E5E5;
+        border-radius: 8px;
+    }
+    .primary_paragraph{
         display: flex;
         color: #383838;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
         padding-bottom: 48px;
         line-height: 28px;
+        max-width: 468px;
     }
     .primary_section{
+        padding-top: 48px;
         padding-bottom: 80px;
     }
     .secondly_section{
@@ -244,11 +276,10 @@ li:hover{
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         line-height: 36px;
-        width: 624px;
+        min-width: 250px;
     }
     .square_second{
-        width: 504px;
+        min-width: 544px;
         height: 303px;
-        margin-bottom: 160px;
     }
 }
