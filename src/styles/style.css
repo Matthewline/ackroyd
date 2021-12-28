@@ -75,7 +75,15 @@ li:hover{
     border-radius: 8px;
     margin-bottom: 24px;
 }
-.paragraph{
+.primary_paragraph{
+    display: flex;
+    color: #383838;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-bottom: 48px;
+    line-height: 24px;
+}
+.secondly_paragraph{
     display: flex;
     color: #383838;
     font-family: 'Lato', sans-serif;
@@ -113,7 +121,7 @@ li:hover{
 .footer{
     text-align: center;
     padding-top: 34px;
-    height: 248px;
+    height: 258px;
     background-color: #152B79;
 }
 .footer-list{
@@ -169,4 +177,78 @@ li:hover{
     margin-top: -5px;
     display: flex;
     padding: 0 7px;
+}
+@media only screen and (min-width: 834px) {
+    .main{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .paragraph{
+        display: flex;
+        color: #383838;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        padding-bottom: 48px;
+        line-height: 28px;
+    }
+    .primary_section{
+        padding-bottom: 80px;
+    }
+    .secondly_section{
+        column-count: 2;
+        column-gap: 32px;
+        margin-bottom: 128px;
+    }
+    .square_second{
+        width: 327px;
+        height: 312px;
+        margin-bottom: 128px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main{
+        padding-left: 96px;
+        padding-right: 96px;
+    }
+    .title{
+        font-size: 28px;
+        padding-bottom: 14px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 34px;
+    }
+    .title:after{
+        padding-top: 6px;
+        display: block;
+        padding-bottom: 2px;
+        content: '';
+        position: relative;
+        width: 192px;
+        border-bottom: 2px solid #F39130;
+    }
+    .primary_paragraph{
+        display: flex;
+        color: #383838;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .secondly_section{
+        display: flex;
+        column-count: 2;
+        column-gap: 80px;
+        flex-direction: row-reverse;
+    }
+    .secondly_paragraph{
+        color: #383838;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        line-height: 36px;
+        width: 624px;
+    }
+    .square_second{
+        width: 504px;
+        height: 303px;
+        margin-bottom: 160px;
+    }
 }
