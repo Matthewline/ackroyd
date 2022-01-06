@@ -3,9 +3,9 @@
     "eslint": "^8.5.0",
     "eslint-plugin-react": "^7.27.1",
     "husky": "^7.0.4",
+    "parcel": "^2.0.1",
     "parcel-bundler": "^1.12.5",
-    "prettier": "2.5.1",
-    "parcel": "^2.0.1"
+    "prettier": "2.5.1"
   },
   "name": "ackroyd",
   "description": "",
