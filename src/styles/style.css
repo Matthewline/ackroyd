@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
 }
-.square_primary {
+.image_primary {
   aspect-ratio: 1.7/1;
   background-color: var(--gray-200);
   border-radius: 8px;
@@ -202,16 +202,16 @@
   .nav ul {
     padding-right: 64px;
   }
-  .squares {
+  .images {
     display: flex;
     gap: 24px;
   }
-  .smaller_squares {
+  .smaller_images {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
-  .square_primary {
+  .image_primary {
     width: 468px;
     height: 274px;
     background-color: var(--gray-200);
@@ -219,16 +219,16 @@
     margin-bottom: 80px;
     margin-top: 48px;
   }
-  .smaller_squares {
+  .smaller_images {
     margin-top: 48px;
   }
-  .square_1 {
+  .image_1 {
     width: 214px;
     height: 125px;
     background-color: var(--gray-200);
     border-radius: 8px;
   }
-  .square_2 {
+  .image_2 {
     width: 214px;
     height: 125px;
     background-color: var(--gray-200);
@@ -284,31 +284,31 @@
     display: flex;
     flex-direction: row;
   }
-  .squares {
+  .images {
     gap: 0px;
     display: flex;
     flex-direction: column;
   }
-  .smaller_squares {
+  .smaller_images {
     display: flex;
     flex-direction: row;
     margin-top: 0px;
     margin-bottom: 144px;
   }
-  .square_primary {
+  .image_primary {
     margin-top: 64px;
     width: 624px;
     height: 365px;
     margin-right: 80px;
     margin-bottom: 24px;
   }
-  .square_1 {
+  .image_1 {
     width: 300px;
     height: 175px;
     background-color: var(--gray-200);
     border-radius: 8px;
   }
-  .square_2 {
+  .image_2 {
     width: 300px;
     height: 175px;
     background-color: var(--gray-200);
