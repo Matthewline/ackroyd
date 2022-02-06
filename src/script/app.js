@@ -16,25 +16,53 @@ const email = document.querySelector(".form_email");
 const button = document.querySelector(".form_button");
 let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-email.addEventListener("input", () => {
+email.addEventListener("input", function () {
   if (email.value.match(regExp)) {
-    text.innerHTML = "Your email address in valid";
-    text.style.color = "#eee";
-    text.style.backgroundColor = "#009933";
+    text.textContent = "Your address email is valid";
+    text.classList.add("text_valid");
+    text.classList.remove("text_invalid");
     button.addEventListener(
       "click",
-      () => {
-        text.innerHTML = "Congrats, you're now on our newsletter list";
+      function () {
+        text.textContent = "Congrats, you're now on our newsletter list";
         document.querySelector(".form_email").value = "";
       },
       { once: true }
     );
   } else if (email.value === "" || email.value == null) {
-    text.innerHTML = "";
-    text.style.backgroundColor = "";
+    text.textContent = "";
   } else {
-    text.innerHTML = "Please enter valid email address";
-    text.style.color = "#eee";
-    text.style.backgroundColor = "#c9223a";
+    text.textContent = "Please enter valid email address";
+    text.classList.add("text_invalid");
   }
 });
+
+// Images API
+const image_primary_result = document.querySelector(".image_primary");
+const image_1_result = document.querySelector(".image_1");
+const image_2_result = document.querySelector(".image_2");
+const apiKey =
+  "https://api.nasa.gov/planetary/apod?api_key=Dvrc5VermucA3JmvI8kcBfu2mQSDpDcngkEfMV4s&count=3";
+
+fetch(apiKey)
+  .then((response) => response.json())
+  .then((data) => {
+    image_primary_result.innerHTML = `<img src="${data?.[0]?.url}"/>`;
+    image_1_result.innerHTML = `<img src="${data?.[1]?.url}"/>`;
+    image_2_result.innerHTML = `<img src="${data?.[2]?.url}"/>`;
+  });
+
+// Mobile
+const cover_button = document.querySelectorAll(".cover_button");
+
+for (let i = 0; i < cover_button.length; i++) {
+  cover_button[i].addEventListener("click", function () {
+    document.querySelector(".active_cover_button")
+      ? document
+          .querySelector(".active_cover_button")
+          .classList.remove("active_cover_button")
+      : "";
+    this.classList.add("active_cover_button");
+  });
+  cover_button[0].classList.add("active_cover_button");
+}

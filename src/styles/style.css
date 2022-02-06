@@ -46,12 +46,22 @@
   display: flex;
   flex-direction: column;
 }
-.image_primary {
+.image_primary img {
   aspect-ratio: 1.7/1;
-  background-color: var(--gray-200);
   border-radius: 8px;
   margin-bottom: 16px;
   margin-top: 80px;
+  width: 100%;
+}
+.image_1 img {
+  aspect-ratio: 1.7/1;
+  border-radius: 8px;
+  width: 100%;
+}
+.image_2 img {
+  aspect-ratio: 1.7/1;
+  border-radius: 8px;
+  width: 100%;
 }
 .title {
   font-size: 20px;
@@ -67,11 +77,11 @@
   padding-bottom: 2px;
   width: 128px;
 }
-.image {
+.secondary_image img {
   aspect-ratio: 1.7/1;
-  background-color: var(--gray-200);
   border-radius: 8px;
   margin-bottom: 24px;
+  width: 100%;
 }
 .buttons {
   display: flex;
@@ -200,6 +210,14 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
+.text_valid {
+  color: #eee;
+  background-color: #009933;
+}
+.text_invalid {
+  color: #eee;
+  background-color: #c9223a;
+}
 
 @media only screen and (min-width: 834px) {
   .main {
@@ -223,10 +241,9 @@
     flex-direction: column;
     gap: 24px;
   }
-  .image_primary {
+  .image_primary img {
     width: 468px;
-    height: 274px;
-    background-color: var(--gray-200);
+    height: 278px;
     border-radius: 8px;
     margin-bottom: 80px;
     margin-top: 48px;
@@ -234,16 +251,14 @@
   .smaller_images {
     margin-top: 48px;
   }
-  .image_1 {
+  .image_1 img {
     width: 214px;
     height: 125px;
-    background-color: var(--gray-200);
     border-radius: 8px;
   }
-  .image_2 {
+  .image_2 img {
     width: 214px;
     height: 125px;
-    background-color: var(--gray-200);
     border-radius: 8px;
   }
   .buttons {
@@ -262,7 +277,7 @@
     display: flex;
     width: 349px;
   }
-  .image {
+  .secondary_image img {
     width: 327px;
     height: 312px;
   }
@@ -307,23 +322,22 @@
     margin-top: 0px;
     margin-bottom: 144px;
   }
-  .image_primary {
+  .image_primary img {
     margin-top: 64px;
     width: 624px;
     height: 365px;
     margin-right: 80px;
     margin-bottom: 24px;
   }
-  .image_1 {
+  .image_1 img {
     width: 300px;
     height: 175px;
-    background-color: var(--gray-200);
     border-radius: 8px;
+    max-width: 100%;
   }
-  .image_2 {
+  .image_2 img {
     width: 300px;
     height: 175px;
-    background-color: var(--gray-200);
     border-radius: 8px;
   }
   .buttons {
@@ -358,7 +372,7 @@
     width: 624px;
     margin-right: 54px;
   }
-  .image {
+  .secondary_image img {
     width: 544px;
     height: 303px;
   }
