@@ -21,19 +21,17 @@ input.addEventListener("input", function () {
     text.textContent = "Your address input is valid";
     text.classList.add("text_valid");
     text.classList.remove("text_invalid");
-    button.addEventListener(
-      "click",
-      function () {
-        text.textContent = "Congrats, you're now on our newsletter list";
-        document.querySelector(".form_email").value = "";
-      },
-      { once: true }
-    );
   } else if (input.value === "" || input.value == null) {
     text.textContent = "";
   } else {
     text.textContent = "Please enter valid input address";
     text.classList.add("text_invalid");
+  }
+});
+button.addEventListener("click", function () {
+  if (input.value.match(regExp)) {
+    text.textContent = "Congrats, you're now on our newsletter list";
+    document.querySelector(".form_email").value = "";
   }
 });
 
