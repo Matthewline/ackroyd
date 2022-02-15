@@ -12,7 +12,7 @@
   box-shadow: 2px 2px 2px #4a54b1;
   justify-content: space-between;
   transition: 0.4s;
-  z-index: 1;
+  z-index: 99;
 }
 .nav_hidden {
   transform: translateY(-64px);
@@ -71,6 +71,9 @@
   position: absolute;
   object-fit: cover;
   inset: 0;
+}
+.active_image {
+  z-index: 1;
 }
 .title {
   font-size: 20px;

@@ -36,37 +36,36 @@ button.addEventListener("click", function () {
 });
 
 // Images API
+const images = document.querySelector(".images");
+const smaller_images = document.querySelector(".smaller_images");
+let img = document.createElement("img");
 const apiKey =
   "https://api.nasa.gov/planetary/apod?api_key=Dvrc5VermucA3JmvI8kcBfu2mQSDpDcngkEfMV4s&count=3";
 
 fetch(apiKey)
   .then((response) => response.json())
   .then((data) => {
-    const images = document.querySelector(".images");
-    const smaller_images = document.querySelector(".smaller_images");
     for (let i = 1; i < 3; i++) {
       const img = document.createElement("img");
       img.src = data?.[i]?.url;
       img.classList.add("image");
       smaller_images.append(img);
     }
-    let img = document.createElement("img");
     img.src = data?.[0]?.url;
     img.classList.add("image_primary");
+    img.classList.add("active_image");
     images.prepend(img);
   });
 
-// Mobile
-const cover_button = document.querySelectorAll(".cover_button");
-
-for (let i = 0; i < cover_button.length; i++) {
-  cover_button[i].addEventListener("click", function () {
-    document.querySelector(".active_cover_button")
-      ? document
-          .querySelector(".active_cover_button")
-          .classList.remove("active_cover_button")
-      : "";
-    this.classList.add("active_cover_button");
+const indicators = document.querySelectorAll(".cover_button");
+for (let indicator of indicators) {
+  indicator.addEventListener("click", () => {
+    const images = document.querySelectorAll(".images img");
+    const activeImage = document.querySelector(".active_image");
+    const associatedImage = images[indicator.dataset.imageIndex];
+    if (associatedImage) {
+      associatedImage.classList.add("active_image");
+      activeImage?.classList.remove("active_image");
+    }
   });
-  cover_button[0].classList.add("active_cover_button");
 }
