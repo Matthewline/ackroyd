@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root{
+    --gray-100: #E6EBFE;
+    --gray-200: #0F1D52;
+    --gray-300: #1B379D;
+    --gray-400: #383838;
+    --gray-500: #E5E5E5;
+    --gray-600: #3250BD;
+    --gray-700: #212121;
+    --gray-800: #333333;
+    --gray-900: #F5F5F5;
+    
+    --blue-100: #FFFFFF;
+    --blue-200: #152B79;
+}
