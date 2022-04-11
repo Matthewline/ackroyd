@@ -40,6 +40,10 @@
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+.nav_link {
+  color: var(--blue-600);
+  text-decoration: none;
+}
 .active {
   border-bottom: 4px solid var(--blue-500);
 }
