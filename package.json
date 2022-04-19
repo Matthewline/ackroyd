@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-plugin-react": "^7.27.1",
+    "husky": "^7.0.4",
+    "parcel": "^2.3.2",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "2.5.1"
+  },
+  "name": "ackroyd",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthewline/ackroyd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthewline/ackroyd/issues"
+  },
+  "homepage": "https://github.com/Matthewline/ackroyd#readme"
+}
